@@ -1,0 +1,209 @@
+html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+}
+
+/* INICIO BACKGROUND DESKTOP */
+html body{
+    background-color: #E5D2CC;
+    background-image: url("../images/grid.png");
+    background-repeat: repeat;
+    background-size: 50%;
+    height: 100%;
+    max-height: 100%;
+}
+/* FIM BACKGROUND DESKTOP */
+/**********************/
+/* INICIO BACKGROUND MOBILE */
+
+/* FIM BACKGROUND MOBILE */
+/**********************/
+
+/* INICIO HEADER DESKTOP */
+html body .general .center header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+html body .general .center header .logo {
+    float:left;
+    margin:0;
+    background-image: url("../images/splash_top.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 50%;
+    height: -webkit-fill-available;
+}
+html body .general .center header .logo a {
+    width: 20%;
+    height: 140px;
+    display: inline-grid;
+    text-indent:-999em;
+    margin: 50px 0 0 70px;
+    /* overflow:hidden; */
+    /* display:block; */
+    background-image:url("../images/logo_studio-hema.svg");
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+}
+html body .general .center header .logo h1 a {
+    width: 16%;
+    height: 140px;
+    display: inline-grid;
+    margin: 50px 0 0 50px;
+}
+html body .general .center header .menu {
+    float: right;
+    margin: 0;
+    padding: 50px 50px 0 0;
+    width: 50%;
+    height: -webkit-fill-available;
+    text-align: right;
+    text-transform: uppercase;
+}
+html body .general .center header .menu a {
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #000;
+    display: inline-grid;
+    margin-bottom: 10px;
+}
+html body .general .center header .menu a:hover,
+html body .general .center header .menu a:active {
+    text-decoration: line-through;
+}
+/* FIM HEADER DESKTOP */
+/**********************/
+
+
+/* INICIO CONTEUDO DESKTOP */
+html body .general .center content {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    /* display: -webkit-flex; */
+    /* display: flex; */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    top: 30%;
+    position: fixed;
+}
+
+h1,h2,h3,h4,h5,h6,figure,fieldset{
+   margin:0;
+   padding:0;
+   border:0
+}
+html body .general .center content h2{
+    font-family: Oswald;
+    font-weight: 300;
+    font-size:150px;
+    color:#000;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+}
+html body .general .center content h2 strong {
+   font-weight: 700;
+}
+html body .general .center content h3 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size:26px;
+    color:#000;
+    text-align: center;
+    letter-spacing:5px;
+    padding-top: 30px;
+    width: 100%;
+}
+html body .general .center content .ctas {
+   text-align: center;
+   margin: 60px 0px 0px 0px;
+   padding: 0px;
+}
+html body .general .center content .ctas a {
+   border: 2px solid #000;
+   color: #000;
+   background-color: transparent;
+   font-family: Poppins;
+   font-size: 15px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   padding: 20px 40px;
+   display: inline-block;
+   margin-left: 20px;
+}
+html body .general .center content .ctas a:focus {
+  color: #000;
+  background-color: #E5D2CC;
+}
+html body .general .center content .ctas a:hover {
+  color: #E5D2CC;
+  background-color: #000;
+}
+/* FIM CONTEUDO DESKTOP */
+/**********************/
+
+
+/* INICIO FOOTER DESKTOP */
+html body .general .center footer {
+    min-height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+html body .general .center footer .contato {
+    float:left;
+    bottom:0;
+    width: 50%;
+    position: fixed;
+}
+html body .general .center footer .contato a {
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-grid;
+    margin: 0 0 50px 70px;
+}
+html body .general .center footer .redes {
+    right: 0;
+    background-image: url("../images/splash_botton.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: right;
+    background-position-y: bottom;
+    float: left;
+    bottom: 0;
+    width: 50%;
+    position: fixed;
+}
+html body .general .center footer .redes ul {
+    padding: 50px 50px 0 0;
+    text-align: right;
+}
+html body .general .center footer .redes li {
+    display: inline-grid;
+    margin: 0 10px 50px 0;
+}
+html body .general .center footer .redes li .skype{
+  background-image: url("../images/skype.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+html body .general .center footer .redes li .skype:hover{
+  background-image: url("../images/skype-hover.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+/* FIM FOOTER DESKTOP */
