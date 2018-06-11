@@ -1,4 +1,3 @@
-
 html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
@@ -6,20 +5,16 @@ html{
 
 /* INICIO BACKGROUND DESKTOP */
 html body{
-    background-color: #E5D2CC;
+    /* background-color: #E5D2CC;*/
     background-image: url("../images/grid.png");
     background-repeat: repeat;
     background-size: 50%;
     height: 100%;
-    max-height: 100%;
+    max-height: 100%; */
 }
 /* FIM BACKGROUND DESKTOP */
 /**********************/
 /* INICIO GERAL MOBILE */
-body{
-   line-height:1
-}
-
 blockquote,q{
    quotes:none
 }
@@ -166,77 +161,12 @@ textarea{
    -webkit-appearance:button;
    font:inherit
 }
-
-*{
+/* *{
    margin:0;
    padding:0;
    border:0;
    box-sizing:border-box
-}
-/* FIM GERAL DESKTOP */
-/**********************/
-/* INICIO BACKGROUND MOBILE */
-
-/* FIM BACKGROUND MOBILE */
-/**********************/
-
-
-
-/* INICIO HEADER DESKTOP */
-html body .general .center header {
-    min-height: 60px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-html body .general .center header .logo {
-    float:left;
-    margin:0;
-    background-image: url("../images/splash_top.svg");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    width: 50%;
-    height: -webkit-fill-available;
-}
-html body .general .center header .logo a {
-    width: 16%;
-    height: 140px;
-    display: inline-grid;
-    text-indent:-999em;
-    margin: 50px 0 0 70px;
-    /* overflow:hidden; */
-    /* display:block; */
-    background-image:url("../images/logo_studio-hema.svg");
-    /* background-size: 100%; */
-    background-repeat: no-repeat;
-}
-html body .general .center header .logo h1 a {
-    width: 16%;
-    height: 140px;
-    display: inline-grid;
-    margin: 50px 0 0 50px;
-}
-html body .general .center header nav {
-    float: right;
-    margin: 0;
-    padding: 50px 50px 0 0;
-    width: 50%;
-    height: -webkit-fill-available;
-    text-align: right;
-    text-transform: uppercase;
-}
-html body .general .center header nav a {
-    font-family: Poppins;
-    font-size: 14px;
-    letter-spacing: 3px;
-    color: #000;
-    display: inline-grid;
-    margin-bottom: 10px;
-}
-html body .general .center header nav a:hover,
-html body .general .center header nav a:active {
-    text-decoration: line-through;
-}
+} */
 ol,ul{
    list-style:none
 }
@@ -250,12 +180,26 @@ a:active,a:hover{
 a{
    text-decoration:none
 }
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+html,body,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr{
    margin:0;
    padding:0;
    border:0;
    font-size:100%;
-   vertical-align:baseline
+   vertical-align:baseline;
+}
+acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset {
+   margin:0;
+   padding:0;
+   border:0;
+   font-size:100%;
+   vertical-align:baseline;
+}
+form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+   margin:0;
+   padding:0;
+   border:0;
+   font-size:100%;
+   vertical-align:baseline;
 }
 h1,h2,h3,h4,h5,h6{
    font-weight:normal
@@ -263,96 +207,208 @@ h1,h2,h3,h4,h5,h6{
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
    display:block
 }
+/* FIM GERAL DESKTOP */
+/**********************/
+/* INICIO BACKGROUND MOBILE */
+
+/* FIM BACKGROUND MOBILE */
+/**********************/
+
+/* INICIO HEADER DESKTOP */
+html body header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+html body header .logo {
+    float:left;
+    margin:0;
+    /* background-image: url("../images/splash_top.svg");
+    background-repeat: no-repeat; */
+    background-size: 60%;
+    width: 50%;
+    height: -webkit-fill-available;
+}
+html body header .logo a {
+    width: 16%;
+    height: 140px;
+    display: inline-grid;
+    text-indent:-999em;
+    margin: 50px 0 0 70px;
+    /* overflow:hidden; */
+    /* display:block; */
+    background-image:url("../images/logo_studio-hema.svg");
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+}
+html body header .logo h1 a {
+    width: 16%;
+    height: 140px;
+    display: inline-grid;
+    margin: 50px 0 0 50px;
+}
+html body header nav {
+    right: 0;
+    margin: 0;
+    padding: 50px 50px 0 0;
+    width: 50%;
+    height: -webkit-fill-available;
+    text-align: right;
+    text-transform: uppercase;
+    position: fixed;
+}
+html body header nav a {
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #000;
+    display: inline-grid;
+    margin-bottom: 10px;
+}
+html body header nav a:hover,{
+    text-decoration: line-through;
+}
+html body header nav .active {
+    text-decoration: line-through;
+    color: #CCA69A;
+}
 /* FIM HEADER DESKTOP */
 /**********************/
 
 
 /* INICIO CONTEUDO DESKTOP */
-html body .general .center content {
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    /* display: -webkit-flex; */
-    /* display: flex; */
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    top: 30%;
-    position: fixed;
+html body .quem-somos {
+    width: 80%;
+    margin: 100px 10% 0 10%;
+    align-content: center;
+    display: block;
 }
-
-h1,h2,h3,h4,h5,h6,figure,fieldset{
-   margin:0;
-   padding:0;
-   border:0
-}
-html body .general .center content h2{
+html body content h2 {
     font-family: Oswald;
     font-weight: 300;
-    font-size:150px;
+    font-size:80px;
     color:#000;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
     display: block;
 }
-html body .general .center content h2 strong {
+html body content h2 strong {
    font-weight: 700;
 }
-html body .general .center content h3 {
+html body content h5 {
     font-family: Poppins;
-    font-weight: 400;
-    font-size:26px;
+    font-weight: 300;
+    font-size:18px;
     color:#000;
     text-align: center;
     letter-spacing:5px;
-    padding-top: 30px;
+    padding: 10px 10% 0 10%;
+    width: 80%;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+html body content p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size:16px;
+    color:#000;
+    text-align: center;
+    padding: 20px 10% 0 10%;
+    width: 80%;
+    line-height: 30px;
+    background-position-x: center;
+}
+html body content .cases {
+    background-repeat: no-repeat;
     width: 100%;
+    /* height: -webkit-fill-available; */
+    height: 70%;
+    display: block;
+    align-content: center;
+    padding: 0;
+    text-indent:-999em;
 }
-html body .general .center content .ctas {
-   text-align: center;
-   margin: 60px 0px 0px 0px;
-   padding: 0px;
+html body content .purple {
+    background-image: url("../images/case-purple-yellow.png");
+    background-size: 100%;
+    margin-top: 80px;
 }
-html body .general .center content .ctas a {
-   border: 2px solid #000;
-   color: #000;
-   background-color: transparent;
-   font-family: Poppins;
-   font-size: 15px;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   padding: 20px 40px;
-   display: inline-block;
-   margin-left: 20px;
+html body content .blue {
+    background-image: url("../images/case-blue-bird.png");
+    background-size: 100%;
 }
-html body .general .center content .ctas a:focus {
-  color: #000;
-  background-color: #E5D2CC;
+html body content .editora {
+    background-image: url("../images/case-editora-santuario.png");
+    background-size: 100%;
 }
-html body .general .center content .ctas a:hover {
-  color: #E5D2CC;
-  background-color: #000;
+html body content .livraria {
+    background-image: url("../images/case-livraria-culura.png");
+    background-size: 100%;
+}
+html body content h3 {
+    font-family: Oswald;
+    font-weight: 300;
+    font-size:40px;
+    color:#CCA69A;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 0 0 22%;
+}
+html body content h4 {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size:16px;
+    color:#000;
+    text-align: left;
+    width: 80%;
+    line-height: 30px;
+    padding: 0;
+    margin: 53% 0 0 22%;;
+}
+html body content h3 strong {
+  font-weight: 700;
+}
+
+html body content hr {
+  border: 0;
+  margin-bottom: 100px;
+}
+html body content ul {
+  text-align: center;
+}
+html body content li {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size:16px;
+  color:#000;
+  text-align: center;
+  line-height: 30px;
+  padding: 20px;
+  display: inline-block;
+  text-transform: uppercase;
 }
 /* FIM CONTEUDO DESKTOP */
 /**********************/
 
 
 /* INICIO FOOTER DESKTOP */
-html body .general .center footer {
+html body footer {
     min-height: 60px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-html body .general .center footer .contato {
+html body footer .contato {
     float:left;
     bottom:0;
     width: 50%;
     position: fixed;
 }
-html body .general .center footer .contato a {
+html body footer .contato a {
     font-family: Poppins;
     font-size: 14px;
     letter-spacing: 3px;
@@ -361,7 +417,7 @@ html body .general .center footer .contato a {
     display: inline-grid;
     margin: 0 0 50px 70px;
 }
-html body .general .center footer .redes {
+html body footer .redes {
     right: 0;
     background-image: url("../images/splash_botton.svg");
     background-repeat: no-repeat;
@@ -373,22 +429,22 @@ html body .general .center footer .redes {
     width: 50%;
     position: fixed;
 }
-html body .general .center footer .redes ul {
+html body footer .redes ul {
     padding: 50px 50px 0 0;
     text-align: right;
 }
-html body .general .center footer .redes li {
+html body footer .redes li {
     display: inline-grid;
     margin: 0 10px 50px 0;
 }
-html body .general .center footer .redes li .skype{
+html body footer .redes li .skype{
   background-image: url("../images/skype.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   font-size: 0;
 }
-html body .general .center footer .redes li .skype:hover{
+html body footer .redes li .skype:hover{
   background-image: url("../images/skype-hover.svg");
   background-repeat: no-repeat;
   width: 40px;
@@ -396,23 +452,3 @@ html body .general .center footer .redes li .skype:hover{
   font-size: 0;
 }
 /* FIM FOOTER DESKTOP */
-
-
-
-
-
-
-/**********************/
-/* INICIO CORPO MOBILE */
-@media only screen and (min-width: 100px) and (max-width: 760px){
-    html body .general .center .content h2{
-        font-size:20px;
-    }
-}
-
-@media only screen and (min-width: 100px) and (max-width: 760px){
-    html body .general .center .content h3{
-        font-size:30px;
-        line-height:40px
-    }
-}
