@@ -1,23 +1,12 @@
 
+/********************** INICIO GERAL **********************/
 html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
 }
-
-/* INICIO BACKGROUND DESKTOP */
-html body{
-    background-color: #E5D2CC;
-    background-image: url("../images/grid.png");
-    background-repeat: repeat;
-    background-size: 50%;
-    height: 100%;
-    max-height: 100%;
-}
-/* FIM BACKGROUND DESKTOP */
-/**********************/
-/* INICIO GERAL MOBILE */
 body{
-   line-height:1
+   line-height:1;
+   margin:0;
 }
 
 blockquote,q{
@@ -35,14 +24,6 @@ table{
    border-collapse:collapse;
    border-spacing:0
 }
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-html{
-   -ms-text-size-adjust:100%;
-   -webkit-text-size-adjust:100%
-}
-body{
-   margin:0
-}
 audio,canvas,progress,video{
    display:inline-block
 }
@@ -56,7 +37,6 @@ progress{
 template,[hidden]{
    display:none
 }
-
 abbr[title]{
    border-bottom:none;
    text-decoration:underline;
@@ -68,6 +48,18 @@ dfn{
 h1{
    font-size:2em;
    margin:0.67em 0
+}
+a:active,
+a:hover{
+   outline-width:0
+}
+a{
+   background-color:transparent;
+   -webkit-text-decoration-skip:objects;
+   text-decoration:none
+}
+ol,ul{
+   list-style:none
 }
 mark{
    background-color:#ff0;
@@ -166,91 +158,27 @@ textarea{
    -webkit-appearance:button;
    font:inherit
 }
-
 *{
    margin:0;
    padding:0;
    border:0;
    box-sizing:border-box
 }
-/* FIM GERAL DESKTOP */
-/**********************/
-/* INICIO BACKGROUND MOBILE */
-
-/* FIM BACKGROUND MOBILE */
-/**********************/
-
-
-
-/* INICIO HEADER DESKTOP */
-html body .general .center header {
-    min-height: 60px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address{
+   margin:0;
+   padding:0;
+   border:0;
+   font-size:100%;
+   vertical-align:baseline
 }
-html body .general .center header .logo {
-    float:left;
-    margin:0;
-    background-image: url("../images/splash_top.svg");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    width: 50%;
-    height: -webkit-fill-available;
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,{
+   margin:0;
+   padding:0;
+   border:0;
+   font-size:100%;
+   vertical-align:baseline
 }
-html body .general .center header .logo a {
-    width: 16%;
-    height: 140px;
-    display: inline-grid;
-    text-indent:-999em;
-    margin: 50px 0 0 70px;
-    /* overflow:hidden; */
-    /* display:block; */
-    background-image:url("../images/logo_studio-hema.svg");
-    /* background-size: 100%; */
-    background-repeat: no-repeat;
-}
-html body .general .center header .logo h1 a {
-    width: 16%;
-    height: 140px;
-    display: inline-grid;
-    margin: 50px 0 0 50px;
-}
-html body .general .center header nav {
-    float: right;
-    margin: 0;
-    padding: 50px 50px 0 0;
-    width: 50%;
-    height: -webkit-fill-available;
-    text-align: right;
-    text-transform: uppercase;
-}
-html body .general .center header nav a {
-    font-family: Poppins;
-    font-size: 14px;
-    letter-spacing: 3px;
-    color: #000;
-    display: inline-grid;
-    margin-bottom: 10px;
-}
-html body .general .center header nav a:hover,
-html body .general .center header nav a:active {
-    text-decoration: line-through;
-}
-ol,ul{
-   list-style:none
-}
-a{
-   background-color:transparent;
-   -webkit-text-decoration-skip:objects
-}
-a:active,a:hover{
-   outline-width:0
-}
-a{
-   text-decoration:none
-}
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
    margin:0;
    padding:0;
    border:0;
@@ -263,17 +191,79 @@ h1,h2,h3,h4,h5,h6{
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
    display:block
 }
-/* FIM HEADER DESKTOP */
+/********************** TERMINO GERAL **********************/
+/************************************************************/
+/********************** INICIO DESKTOP **********************/
+/* INICIO BACKGROUND */
+html body{
+    background-color: #E5D2CC;
+    background-image: url("../images/grid.png");
+    background-repeat: repeat;
+    background-size: 50%;
+    height: 100%;
+    max-height: 100%;
+}
+/* FIM BACKGROUND */
 /**********************/
-
-
-/* INICIO CONTEUDO DESKTOP */
-html body .general .center content {
+/* INICIO HEADER */
+html body header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+html body header .logo {
+    float:left;
+    margin:0;
+    background-image: url("../images/splash_top.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 50%;
+    height: -webkit-fill-available;
+}
+html body header .logo a {
+    width: 16%;
+    height: 140px;
+    display: inline-grid;
+    text-indent:-999em;
+    margin: 50px 0 0 70px;
+    background-image:url("../images/logo_studio-hema.svg");
+    background-repeat: no-repeat;
+}
+html body header .logo h1 a {
+    width: 16%;
+    height: 140px;
+    display: inline-grid;
+    margin: 50px 0 0 50px;
+}
+html body header nav {
+    float: right;
+    margin: 0;
+    padding: 50px 50px 0 0;
+    width: 50%;
+    height: -webkit-fill-available;
+    text-align: right;
+    text-transform: uppercase;
+}
+html body header nav a {
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #000;
+    display: inline-grid;
+    margin-bottom: 10px;
+}
+html body header nav a:hover,
+html body header nav a:active {
+    text-decoration: line-through;
+}
+/* FIM HEADER */
+/**********************/
+/* INICIO CONTEUDO */
+html body content {
     width: 100%;
     height: 100%;
     max-height: 100%;
-    /* display: -webkit-flex; */
-    /* display: flex; */
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
@@ -282,12 +272,7 @@ html body .general .center content {
     position: fixed;
 }
 
-h1,h2,h3,h4,h5,h6,figure,fieldset{
-   margin:0;
-   padding:0;
-   border:0
-}
-html body .general .center content h2{
+html body content h2 {
     font-family: Oswald;
     font-weight: 300;
     font-size:150px;
@@ -297,10 +282,10 @@ html body .general .center content h2{
     width: 100%;
     display: block;
 }
-html body .general .center content h2 strong {
+html body content h2 strong {
    font-weight: 700;
 }
-html body .general .center content h3 {
+html body content h3 {
     font-family: Poppins;
     font-weight: 400;
     font-size:26px;
@@ -310,12 +295,12 @@ html body .general .center content h3 {
     padding-top: 30px;
     width: 100%;
 }
-html body .general .center content .ctas {
+html body content .ctas {
    text-align: center;
    margin: 60px 0px 0px 0px;
    padding: 0px;
 }
-html body .general .center content .ctas a {
+html body content .ctas a {
    border: 2px solid #000;
    color: #000;
    background-color: transparent;
@@ -327,32 +312,30 @@ html body .general .center content .ctas a {
    display: inline-block;
    margin-left: 20px;
 }
-html body .general .center content .ctas a:focus {
+html body content .ctas a:focus {
   color: #000;
   background-color: #E5D2CC;
 }
-html body .general .center content .ctas a:hover {
+html body content .ctas a:hover {
   color: #E5D2CC;
   background-color: #000;
 }
-/* FIM CONTEUDO DESKTOP */
+/* FIM CONTEUDO */
 /**********************/
-
-
-/* INICIO FOOTER DESKTOP */
-html body .general .center footer {
+/* INICIO FOOTER */
+html body footer {
     min-height: 60px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-html body .general .center footer .contato {
+html body footer .contato {
     float:left;
     bottom:0;
     width: 50%;
     position: fixed;
 }
-html body .general .center footer .contato a {
+html body footer .contato a {
     font-family: Poppins;
     font-size: 14px;
     letter-spacing: 3px;
@@ -361,7 +344,10 @@ html body .general .center footer .contato a {
     display: inline-grid;
     margin: 0 0 50px 70px;
 }
-html body .general .center footer .redes {
+html body footer .contato a:hover {
+    text-decoration: line-through;
+}
+html body footer .redes {
     right: 0;
     background-image: url("../images/splash_botton.svg");
     background-repeat: no-repeat;
@@ -373,46 +359,197 @@ html body .general .center footer .redes {
     width: 50%;
     position: fixed;
 }
-html body .general .center footer .redes ul {
+html body footer .redes ul {
     padding: 50px 50px 0 0;
     text-align: right;
 }
-html body .general .center footer .redes li {
+html body footer .redes li {
     display: inline-grid;
     margin: 0 10px 50px 0;
 }
-html body .general .center footer .redes li .skype{
+html body footer .redes li .skype{
   background-image: url("../images/skype.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   font-size: 0;
 }
-html body .general .center footer .redes li .skype:hover{
+html body footer .redes li .whatsapp{
+  background-image: url("../images/whatsapp.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+html body footer .redes li .skype:hover{
   background-image: url("../images/skype-hover.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   font-size: 0;
 }
-/* FIM FOOTER DESKTOP */
-
-
-
-
-
-
+/* FIM FOOTER */
+/********************** TERMINO DESKTOP **********************/
+/************************************************************/
+/********************** INICIO MOBILE **********************/
+/* INICIO BACKGROUND */
+@media only screen and (min-width: 100px) and (max-width: 760px){
+    html body{
+        background-color: #E5D2CC;
+        background-image: url("../images/grid.png");
+        background-repeat: repeat;
+        background-size: 500%;
+        height: 100%;
+        max-height: 100%;
+    }
+}
+/* FIM BACKGROUND */
 /**********************/
-/* INICIO CORPO MOBILE */
+/* INICIO HEADER */
 @media only screen and (min-width: 100px) and (max-width: 760px){
-    html body .general .center .content h2{
-        font-size:20px;
+    html body header {
+        min-height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    html body header .logo {
+        float:left;
+        margin:0;
+        background-image: url("../images/splash_top.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 50%;
+        height: -webkit-fill-available;
+    }
+    html body header .logo a {
+        width: 50%;
+        height: 140px;
+        display: inline-grid;
+        text-indent:-999em;
+        margin: 20px 0 0 20px;
+        background-image:url("../images/logo_studio-hema.svg");
+        background-repeat: no-repeat;
+    }
+    html body header .logo h1 a {
+        width: 16%;
+        height: 140px;
+        display: inline-grid;
+        margin: 50px 0 0 50px;
+    }
+    html body header nav {
+        display: none;
     }
 }
+/* FIM HEADER */
+/**********************/
+/* INICIO CONTEUDO */
+@media only screen and (min-width: 100px) and (max-width: 760px){
+    html body content {
+        width: 80%;
+        height: 100%;
+        max-height: 100%;
+        margin: 0 10%;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        top: 30%;
+        position: fixed;
+    }
 
-@media only screen and (min-width: 100px) and (max-width: 760px){
-    html body .general .center .content h3{
-        font-size:30px;
-        line-height:40px
+
+    html body content h2{
+        font-family: Oswald;
+        font-weight: 300;
+        font-size:60px;
+        color:#000;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+    }
+    html body content h2 strong {
+       font-weight: 700;
+    }
+    html body content h3 {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #000;
+        text-align: center;
+        letter-spacing: 5px;
+        padding-top: 20px;
+        width: 100%;
+    }
+    html body content .ctas {
+       text-align: center;
+       margin-top: 30px;
+    }
+    html body content .ctas .trabalhos {
+       text-align: center;
+       margin-top: 30px;
+    }
+    html body content .ctas a {
+       border: 2px solid #000;
+       color: #000;
+       background-color: transparent;
+       font-family: Poppins;
+       font-size: 15px;
+       text-transform: uppercase;
+       letter-spacing: 3px;
+       padding: 20px 40px;
+       display: inline-block;
+       margin-left: 20px;
+    }
+    html body content .ctas a:focus {
+      color: #000;
+      background-color: #E5D2CC;
+    }
+    html body content .ctas a:hover {
+      color: #E5D2CC;
+      background-color: #000;
     }
 }
+/**********************/
+/* INICIO FOOTER */
+@media only screen and (min-width: 100px) and (max-width: 760px){
+    html body footer .contato {
+        float:left;
+        bottom:0;
+        width: 50%;
+        position: fixed;
+    }
+    html body footer .contato a {
+        font-family: Poppins;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: #000;
+        text-transform: uppercase;
+        display: inline-grid;
+        margin: 0 0 30px 20px;
+    }
+    html body footer .redes {
+        right: 0;
+        background-image: url("../images/splash_botton.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-x: right;
+        background-position-y: bottom;
+        float: left;
+        bottom: 0;
+        width: 50%;
+        position: fixed;
+    }
+    html body footer .redes ul {
+        padding: 0;
+        text-align: right;
+    }
+    html body footer .redes li {
+        margin: 0 20px 20px 0;
+    }
+}
+/* FIM FOOTER */
+/********************** TERMINO MOBILE **********************/
+/************************************************************/

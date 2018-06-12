@@ -1,20 +1,13 @@
+/********************** INICIO GERAL **********************/
 html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
 }
-
-/* INICIO BACKGROUND DESKTOP */
-html body{
-    /* background-color: #E5D2CC;*/
-    background-image: url("../images/grid.png");
-    background-repeat: repeat;
-    background-size: 50%;
-    height: 100%;
-    max-height: 100%; */
+body{
+   line-height:1;
+   margin:0;
 }
-/* FIM BACKGROUND DESKTOP */
-/**********************/
-/* INICIO GERAL MOBILE */
+
 blockquote,q{
    quotes:none
 }
@@ -30,14 +23,6 @@ table{
    border-collapse:collapse;
    border-spacing:0
 }
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-html{
-   -ms-text-size-adjust:100%;
-   -webkit-text-size-adjust:100%
-}
-body{
-   margin:0
-}
 audio,canvas,progress,video{
    display:inline-block
 }
@@ -51,7 +36,6 @@ progress{
 template,[hidden]{
    display:none
 }
-
 abbr[title]{
    border-bottom:none;
    text-decoration:underline;
@@ -63,6 +47,18 @@ dfn{
 h1{
    font-size:2em;
    margin:0.67em 0
+}
+a:active,
+a:hover{
+   outline-width:0
+}
+a{
+   background-color:transparent;
+   -webkit-text-decoration-skip:objects;
+   text-decoration:none
+}
+ol,ul{
+   list-style:none
 }
 mark{
    background-color:#ff0;
@@ -161,45 +157,32 @@ textarea{
    -webkit-appearance:button;
    font:inherit
 }
-/* *{
+*{
    margin:0;
    padding:0;
    border:0;
    box-sizing:border-box
-} */
-ol,ul{
-   list-style:none
 }
-a{
-   background-color:transparent;
-   -webkit-text-decoration-skip:objects
-}
-a:active,a:hover{
-   outline-width:0
-}
-a{
-   text-decoration:none
-}
-html,body,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr{
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address{
    margin:0;
    padding:0;
    border:0;
    font-size:100%;
-   vertical-align:baseline;
+   vertical-align:baseline
 }
-acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset {
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,{
    margin:0;
    padding:0;
    border:0;
    font-size:100%;
-   vertical-align:baseline;
+   vertical-align:baseline
 }
-form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
    margin:0;
    padding:0;
    border:0;
    font-size:100%;
-   vertical-align:baseline;
+   vertical-align:baseline
 }
 h1,h2,h3,h4,h5,h6{
    font-weight:normal
@@ -207,14 +190,20 @@ h1,h2,h3,h4,h5,h6{
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
    display:block
 }
-/* FIM GERAL DESKTOP */
+/********************** TERMINO GERAL **********************/
+/************************************************************/
+/********************** INICIO DESKTOP **********************/
+/* INICIO BACKGROUND */
+html body{
+    background-image: url("../images/grid.png");
+    background-repeat: repeat;
+    background-size: 50%;
+    height: 100%;
+    max-height: 100%;
+}
+/* FIM BACKGROUND */
 /**********************/
-/* INICIO BACKGROUND MOBILE */
-
-/* FIM BACKGROUND MOBILE */
-/**********************/
-
-/* INICIO HEADER DESKTOP */
+/* INICIO HEADER */
 html body header {
     min-height: 60px;
     position: fixed;
@@ -224,9 +213,6 @@ html body header {
 html body header .logo {
     float:left;
     margin:0;
-    /* background-image: url("../images/splash_top.svg");
-    background-repeat: no-repeat; */
-    background-size: 60%;
     width: 50%;
     height: -webkit-fill-available;
 }
@@ -236,10 +222,7 @@ html body header .logo a {
     display: inline-grid;
     text-indent:-999em;
     margin: 50px 0 0 70px;
-    /* overflow:hidden; */
-    /* display:block; */
     background-image:url("../images/logo_studio-hema.svg");
-    /* background-size: 100%; */
     background-repeat: no-repeat;
 }
 html body header .logo h1 a {
@@ -249,14 +232,13 @@ html body header .logo h1 a {
     margin: 50px 0 0 50px;
 }
 html body header nav {
-    right: 0;
+    float: right;
     margin: 0;
     padding: 50px 50px 0 0;
     width: 50%;
     height: -webkit-fill-available;
     text-align: right;
     text-transform: uppercase;
-    position: fixed;
 }
 html body header nav a {
     font-family: Poppins;
@@ -266,23 +248,31 @@ html body header nav a {
     display: inline-grid;
     margin-bottom: 10px;
 }
-html body header nav a:hover,{
+html body header nav a:hover {
     text-decoration: line-through;
 }
-html body header nav .active {
+html body header nav .ativo {
     text-decoration: line-through;
-    color: #CCA69A;
+    color:#CCA69A;
 }
-/* FIM HEADER DESKTOP */
+/* FIM HEADER */
 /**********************/
-
-
-/* INICIO CONTEUDO DESKTOP */
-html body .quem-somos {
+/* INICIO CONTEUDO */
+html body content {
     width: 80%;
     margin: 100px 10% 0 10%;
     align-content: center;
     display: block;
+}
+html body content .cases {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: -webkit-fill-available;
+    height: 70%;
+    display: block;
+    align-content: center;
+    padding: 0;
+    text-indent:-999em;
 }
 html body content h2 {
     font-family: Oswald;
@@ -303,7 +293,7 @@ html body content h5 {
     color:#000;
     text-align: center;
     letter-spacing:5px;
-    padding: 10px 10% 0 10%;
+    margin: 20px 10% 0 10%;
     width: 80%;
     text-transform: uppercase;
     line-height: 30px;
@@ -314,20 +304,23 @@ html body content p {
     font-size:16px;
     color:#000;
     text-align: center;
-    padding: 20px 10% 0 10%;
+    margin: 20px 10% 0 10%;
     width: 80%;
     line-height: 30px;
-    background-position-x: center;
 }
-html body content .cases {
-    background-repeat: no-repeat;
-    width: 100%;
-    /* height: -webkit-fill-available; */
-    height: 70%;
-    display: block;
-    align-content: center;
-    padding: 0;
-    text-indent:-999em;
+html body content ul {
+  text-align: center;
+}
+html body content li {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size:16px;
+  color:#000;
+  text-align: center;
+  line-height: 30px;
+  padding: 20px;
+  display: inline-block;
+  text-transform: uppercase;
 }
 html body content .purple {
     background-image: url("../images/case-purple-yellow.png");
@@ -346,56 +339,17 @@ html body content .livraria {
     background-image: url("../images/case-livraria-culura.png");
     background-size: 100%;
 }
-html body content h3 {
-    font-family: Oswald;
-    font-weight: 300;
-    font-size:40px;
-    color:#CCA69A;
-    text-align: left;
-    text-transform: uppercase;
-    width: 100%;
-    display: block;
-    padding: 0;
-    margin: 0 0 0 22%;
-}
-html body content h4 {
-    font-family: Poppins;
-    font-weight: 300;
-    font-size:16px;
-    color:#000;
-    text-align: left;
-    width: 80%;
-    line-height: 30px;
-    padding: 0;
-    margin: 53% 0 0 22%;;
-}
-html body content h3 strong {
-  font-weight: 700;
-}
-
 html body content hr {
   border: 0;
   margin-bottom: 100px;
 }
-html body content ul {
-  text-align: center;
+
+html body content {
+  margin-bottom: 300px;
 }
-html body content li {
-  font-family: Poppins;
-  font-weight: 300;
-  font-size:16px;
-  color:#000;
-  text-align: center;
-  line-height: 30px;
-  padding: 20px;
-  display: inline-block;
-  text-transform: uppercase;
-}
-/* FIM CONTEUDO DESKTOP */
+/* FIM CONTEUDO */
 /**********************/
-
-
-/* INICIO FOOTER DESKTOP */
+/* INICIO FOOTER */
 html body footer {
     min-height: 60px;
     position: fixed;
@@ -416,6 +370,9 @@ html body footer .contato a {
     text-transform: uppercase;
     display: inline-grid;
     margin: 0 0 50px 70px;
+}
+html body footer .contato a:hover {
+    text-decoration: line-through;
 }
 html body footer .redes {
     right: 0;
@@ -444,6 +401,13 @@ html body footer .redes li .skype{
   height: 40px;
   font-size: 0;
 }
+html body footer .redes li .whatsapp{
+  background-image: url("../images/whatsapp.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
 html body footer .redes li .skype:hover{
   background-image: url("../images/skype-hover.svg");
   background-repeat: no-repeat;
@@ -451,4 +415,168 @@ html body footer .redes li .skype:hover{
   height: 40px;
   font-size: 0;
 }
-/* FIM FOOTER DESKTOP */
+html body footer .redes li .whatsapp:hover{
+  background-image: url("../images/whatsapp-hover.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+/* FIM FOOTER */
+/********************** TERMINO DESKTOP **********************/
+/************************************************************/
+/********************** INICIO MOBILE **********************/
+/* INICIO BACKGROUND */
+@media only screen and (min-width: 100px) and (max-width: 760px){
+    html body{
+        background-image: url("../images/grid.png");
+        background-repeat: repeat;
+        background-size: 500%;
+        height: 100%;
+        max-height: 100%;
+    }
+}
+/* FIM BACKGROUND */
+/**********************/
+/* INICIO HEADER */
+@media only screen and (min-width: 100px) and (max-width: 760px){
+    html body header {
+        min-height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #ffffffe0;
+    }
+    html body header .logo {
+        float:left;
+        margin:0;
+        width: 50%;
+        height: -webkit-fill-available;
+    }
+    html body header .logo a {
+        width: 50%;
+        height: 140px;
+        display: inline-grid;
+        text-indent:-999em;
+        margin: 20px 0 0 20px;
+        background-image:url("../images/logo_studio-hema.svg");
+        background-repeat: no-repeat;
+    }
+    html body header .logo h1 a {
+        width: 16%;
+        height: 140px;
+        display: inline-grid;
+        margin: 50px 0 0 50px;
+    }
+    html body header nav {
+        float: right;
+        margin: 0;
+        padding: 20px 20px 0 0;
+        width: 50%;
+        height: -webkit-fill-available;
+        text-align: right;
+        text-transform: uppercase;
+    }
+}
+/* FIM HEADER */
+/**********************/
+/* INICIO CONTEUDO */
+@media only screen and (min-width: 100px) and (max-width: 760px){
+    html body content {
+        width: 80%;
+        margin: 100px 10% 0 10%;
+        align-content: center;
+        display: block;
+    }
+html body content .cases {
+        height: 130px;
+}
+    html body content h2 {
+        font-family: Oswald;
+        font-weight: 300;
+        font-size:30px;
+        color:#000;
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+    }
+    html body content h2 strong {
+       font-weight: 700;
+    }
+    html body content h5 {
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000;
+        text-align: center;
+        letter-spacing: 5px;
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+    html body content p {
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        color:#000;
+        text-align: center;
+        margin: 20px 0 0 0;
+        width: 100%;
+        line-height: 30px;
+    }
+    html body content hr {
+      border: 0;
+      margin-bottom: 30px;
+    }
+    html body content ul {
+      text-align: center;
+    }
+    html body content li:first-of-type{
+      margin-top: 20px;
+    }
+    html body content li {
+      font-family: Poppins;
+      font-weight: 300;
+      font-size:12px;
+      color:#000;
+      text-align: center;
+      line-height: 30px;
+      padding: 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 0px 20px 0 0
+    }
+}
+html body content {
+  margin-bottom: 30px;
+}
+/**********************/
+/* INICIO FOOTER */
+@media only screen and (min-width: 100px) and (max-width: 760px){
+    html body footer .contato {
+        display: none;
+    }
+    html body footer .redes {
+        right: 0;
+        background-image: url("../images/splash_botton.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-x: right;
+        background-position-y: bottom;
+        float: left;
+        bottom: 0;
+        width: 50%;
+        position: fixed;
+    }
+    html body footer .redes ul {
+        padding: 0;
+        text-align: right;
+    }
+    html body footer .redes li {
+        margin: 0 20px 20px 0;
+    }
+}
+/* FIM FOOTER */
+/********************** TERMINO MOBILE **********************/
+/************************************************************/
